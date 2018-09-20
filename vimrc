@@ -101,7 +101,9 @@ set backspace=2
 set scrolloff=5
 " Use syntax highlighting.
 syntax enable
-color badwolf
+color badwolf 
+
 " Display interesting characters, such as trailing whitespace, specially.
 set list
 set listchars=trail:·,tab:>-,extends:!
+execute pathogen#infect()
