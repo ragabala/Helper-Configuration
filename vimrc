@@ -11,6 +11,7 @@ nmap <F9> :NERDTreeToggle<CR>
 nmap <F10> :UndotreeToggle<CR>
 nmap <F12> :TagbarToggle<CR>
 nmap t :set paste<CR>
+nmap <C-d> :1,$d<CR>
 " Where should vim look for the tags that exuberant ctags generates?
 set tags=~/.cache/custom-ctags/tags
 " Allows method names such as `has_key?` to be looked up.
