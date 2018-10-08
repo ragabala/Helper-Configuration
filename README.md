@@ -19,9 +19,10 @@ chmod 777 setenv.sh
 ```
 
 ### Git
+Contains useful additional git shortcuts.
 
-It adds a new command `hist` which is useful in listing the git commits in a decorated way
-It can also be used for creating the name and email aliases for the git commits.
+`hist` -is useful in listing the git commits in a decorated way
+`upstreamit` - fetches and rebases local with upstream/master
 
 ### Vim
 
