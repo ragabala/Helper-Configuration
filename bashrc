@@ -23,6 +23,18 @@ fi
 	echo "using Virtual Environment $1"
 	source ~/.venvs/$1/bin/activate
 }
+
+function _listlists()
+{
+    local cur
+    COMPREPLY=()
+    cur=${COMP_WORDS[COMP_CWORD]}
+    COMPREPLY=($( compgen -W "$(ls ~/.venvs )" -- $cur ) )
+
+}
+
+complete -F _listlists pyenv
+
 git_branch() {
     (which git &>/dev/null && git branch 2>/dev/null || echo) \
     | grep '^*' \
