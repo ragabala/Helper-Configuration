@@ -78,3 +78,5 @@ set_ps1() {
  $ '
  }
  PROMPT_COMMAND=set_ps1
+ # Allow forward search scroll using ctrl+s
+ stty -ixon
